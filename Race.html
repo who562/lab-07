@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lan="en">
+ <head>
+  <title>Registration For Race</title>
+  <style type="text/css">
+   h1 { color:  red ; }
+   h2 { font-family: Times New Roman; color: blue ; }
+   p { font-family: Ariel; color: green}
+   input[type=submit] {
+      background-color: #4CAF50; /* Green */
+      border: none;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 12px;
+      margin: 4px 2px;
+      cursor: pointer;
+   }
+  </style>
+ </head>
+      <body>
+            <h1>Registration For Race</h1> 
+             <h2>Please complete ALL fields. Please note the required format of information.</h2>
+            <div>
+                  <form method="post" action="lab7.php">
+                        
+                  <p> First and Last name:
+                  <input type="text" name="name" id="name" /></p>
+                  
+                  <p> Home Address:
+                  <input type="text" name="address" id="address" /></p>
+                  
+                  <p> Gender:
+                  <input type="text" name="gender" id="gender" /></p>
+                  
+                  
+                  <p>Shirt size:
+                        <select name='size' id='size'>
+                        <option>chose a shirt size</option>
+                        <option>Small</option>
+                        <option>Medium</option>
+                        <option>Large</option>
+                        <option>Extra Large </option>
+                        </select></p>
+                        
+                  <p>Age of runner:
+                        <input type="number" min="1.0" max="1000.0" name="value" id="value" /></p>
+                        
+       
+                        <input type="submit" value="Sumbit to register" />
+                  </form>
+            </div>
+      </body>
+</html> 
