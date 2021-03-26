@@ -30,6 +30,18 @@
   $gender = filter_var( $_POST['gender'], FILTER_SANITIZE_STRING);
   $size = filter_var( $_POST['size'], FILTER_SANITIZE_STRING);
   echo "<p>The original value is " . $age . " " . $address . "</p>" ;
+  
+  $cost = 25.00;
+  
+  if ($size === "2x" || $size === "3x") {
+  $cost += 2.00;
+  } 
+  
+  if ($age >= 65) {
+    $cost -= 5.00;
+  }
+  
+  echo"<p style='color: darkblue;'>Your total is $" . $cost . "</p>";
  }
 ?>
  </body>
